@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="/MiniProject/firstjpeg.jpeg" width="300" height="200">
+        <h1><center>Friendship Zone</center></h1>
+        <h2>Add your details to register</h2>
+    </header>
+
+    <section>
+        <form action="RegistrationConfirmation.html" method="GET">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3" pattern="[A-Za-z\s]{3,}">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required min="18">
+            <br><br>
+
+            <label for="birthdate">Birth Day:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="M" required> M
+            <input type="radio" id="female" name="gender" value="F"> F
+            <input type="radio" id="other" name="gender" value="O"> O
+            <br><br>
+
+            <label for="about">About:</label>
+            <textarea id="about" name="about" placeholder="Write something about yourself" rows="4" cols="50"></textarea>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+            <br><br>
+
+            <label>Interested in:</label>
+            <input type="checkbox" id="friendship" name="interest" value="Friendship"> Friendship
+            <input type="checkbox" id="dating" name="interest" value="Dating"> Dating
+            <br><br>
+
+            <label for="attachment">Upload Attachment:</label>
+            <input type="file" id="attachment" name="attachment">
+            <br><br>
+
+            <button type="submit">Register</button>
+            <button type="submit" formaction="RegistrationConfirmationforAdmin.html">Register as Admin</button>
+
+        </form>
+    </section>
+</body>
+</html>
